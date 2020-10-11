@@ -1,13 +1,13 @@
-import 'package:estudo/ad_guia.dart';
-import 'package:estudo/ajuda.dart';
-import 'package:estudo/congestao.dart';
-import 'package:estudo/padroescandle.dart';
-import 'package:estudo/reversao.dart';
-import 'package:estudo/introducao.dart';
-import 'package:estudo/zonas.dart';
+import 'package:estudo/admob/ad_guia.dart';
+import 'package:estudo/telas/ajuda.dart';
+import 'package:estudo/telas/congestao.dart';
+import 'package:estudo/telas/padroescandle.dart';
+import 'package:estudo/telas/reversao.dart';
+import 'package:estudo/telas/introducao.dart';
+import 'package:estudo/telas/zonas.dart';
 import 'package:flutter/material.dart';
 import 'continuidade.dart';
-import 'ad_guia.dart';
+import '../admob/ad_guia.dart';
 
 import 'package:admob_flutter/admob_flutter.dart';
 

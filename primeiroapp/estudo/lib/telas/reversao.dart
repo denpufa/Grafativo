@@ -1,8 +1,8 @@
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:estudo/textos.dart';
+import 'package:estudo/utils/textos.dart';
 import 'package:flutter/material.dart';
 
-import 'ad_guia.dart';
+import '../admob/ad_guia.dart';
 
 class Reversao extends StatefulWidget {
   @override

@@ -1,15 +1,15 @@
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:estudo/textos.dart';
+import 'package:estudo/utils/textos.dart';
 import 'package:flutter/material.dart';
 
-import 'ad_guia.dart';
+import '../admob/ad_guia.dart';
 
-class Zonas extends StatefulWidget {
+class PadroesCandle extends StatefulWidget {
   @override
-  _ZonasState createState() => _ZonasState();
+  _PadroesCandleState createState() => _PadroesCandleState();
 }
 
-class _ZonasState extends State<Zonas> {
+class _PadroesCandleState extends State<PadroesCandle> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +18,7 @@ class _ZonasState extends State<Zonas> {
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
         title: Text(
-          "Suporte e ressistência",
+          "Padrões de candle",
           style: TextStyle(color: Colors.black),
         ),
       ),
@@ -35,33 +35,30 @@ class _ZonasState extends State<Zonas> {
                 )),
             Padding(
               padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-              child: Text(suporte, style: TextStyle(color: Colors.black)),
+              child:
+                  Text(padroes_candle, style: TextStyle(color: Colors.black)),
             ),
-            Image.asset('lib/assets/suporte.png'),
-            Padding(
-                padding: EdgeInsets.only(bottom: 20.0),
-                child: AdmobBanner(
-                  adUnitId: AdGuia.bannerId,
-                  adSize: AdmobBannerSize.BANNER,
-                )),
             Padding(
               padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-              child: Text(ressistencia, style: TextStyle(color: Colors.black)),
-            ),
-            Image.asset('lib/assets/ressistencia.png'),
-            Padding(
-                padding: EdgeInsets.only(bottom: 20.0),
-                child: AdmobBanner(
-                  adUnitId: AdGuia.bannerId,
-                  adSize: AdmobBannerSize.BANNER,
-                )),
-            Padding(
-              padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-              child: Text(linhas_de_tedencia,
-                  style: TextStyle(color: Colors.black)),
+              child: Text(martelo, style: TextStyle(color: Colors.black)),
             ),
             Image.asset(
-              'lib/assets/introducao_dois.png',
+              'lib/assets/martelo.png',
+              scale: 1.7,
+            ),
+            Padding(
+                padding: EdgeInsets.only(bottom: 20.0),
+                child: AdmobBanner(
+                  adUnitId: AdGuia.bannerId,
+                  adSize: AdmobBannerSize.BANNER,
+                )),
+            Padding(
+              padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
+              child:
+                  Text(homen_enforcado, style: TextStyle(color: Colors.black)),
+            ),
+            Image.asset(
+              'lib/assets/homen_enforcado.png',
               scale: 1.7,
             ),
             Padding(

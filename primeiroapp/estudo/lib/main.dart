@@ -1,6 +1,6 @@
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:estudo/ad_guia.dart';
-import 'package:estudo/splash.dart';
+import 'package:estudo/admob/ad_guia.dart';
+import 'package:estudo/telas/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {

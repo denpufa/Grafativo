@@ -1,15 +1,14 @@
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:estudo/textos.dart';
 import 'package:flutter/material.dart';
+import '../utils/textos.dart';
+import '../admob/ad_guia.dart';
 
-import 'ad_guia.dart';
-
-class Continuidade extends StatefulWidget {
+class Introducao extends StatefulWidget {
   @override
-  _ContinuidadeState createState() => _ContinuidadeState();
+  _IntroducaoState createState() => _IntroducaoState();
 }
 
-class _ContinuidadeState extends State<Continuidade> {
+class _IntroducaoState extends State<Introducao> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,7 +17,7 @@ class _ContinuidadeState extends State<Continuidade> {
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
         title: Text(
-          "Figuras de continuidade",
+          "Introdução a análise",
           style: TextStyle(color: Colors.black),
         ),
       ),
@@ -33,13 +32,22 @@ class _ContinuidadeState extends State<Continuidade> {
                   adUnitId: AdGuia.bannerId,
                   adSize: AdmobBannerSize.BANNER,
                 )),
-            Text("Em breve!", style: TextStyle(color: Colors.black)),
+            Padding(
+              padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
+              child: Text(introducao, style: TextStyle(color: Colors.black)),
+            ),
+            Image.asset('lib/assets/introducao.png'),
+            Padding(
+              padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
+              child: Text(introducao_parte_dois,
+                  style: TextStyle(color: Colors.black)),
+            ),
             Padding(
                 padding: EdgeInsets.only(bottom: 20.0),
                 child: AdmobBanner(
                   adUnitId: AdGuia.bannerId,
                   adSize: AdmobBannerSize.BANNER,
-                ))
+                )),
           ],
         ),
       )),

@@ -1,14 +1,15 @@
 import 'package:admob_flutter/admob_flutter.dart';
+import 'package:estudo/utils/textos.dart';
 import 'package:flutter/material.dart';
-import './textos.dart';
-import 'ad_guia.dart';
 
-class Introducao extends StatefulWidget {
+import '../admob/ad_guia.dart';
+
+class Zonas extends StatefulWidget {
   @override
-  _IntroducaoState createState() => _IntroducaoState();
+  _ZonasState createState() => _ZonasState();
 }
 
-class _IntroducaoState extends State<Introducao> {
+class _ZonasState extends State<Zonas> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +18,7 @@ class _IntroducaoState extends State<Introducao> {
         centerTitle: true,
         backgroundColor: Colors.greenAccent,
         title: Text(
-          "Introdução a análise",
+          "Suporte e ressistência",
           style: TextStyle(color: Colors.black),
         ),
       ),
@@ -34,13 +35,34 @@ class _IntroducaoState extends State<Introducao> {
                 )),
             Padding(
               padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-              child: Text(introducao, style: TextStyle(color: Colors.black)),
+              child: Text(suporte, style: TextStyle(color: Colors.black)),
             ),
-            Image.asset('lib/assets/introducao.png'),
+            Image.asset('lib/assets/suporte.png'),
+            Padding(
+                padding: EdgeInsets.only(bottom: 20.0),
+                child: AdmobBanner(
+                  adUnitId: AdGuia.bannerId,
+                  adSize: AdmobBannerSize.BANNER,
+                )),
             Padding(
               padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
-              child: Text(introducao_parte_dois,
+              child: Text(ressistencia, style: TextStyle(color: Colors.black)),
+            ),
+            Image.asset('lib/assets/ressistencia.png'),
+            Padding(
+                padding: EdgeInsets.only(bottom: 20.0),
+                child: AdmobBanner(
+                  adUnitId: AdGuia.bannerId,
+                  adSize: AdmobBannerSize.BANNER,
+                )),
+            Padding(
+              padding: EdgeInsets.only(left: 10.0, right: 10.0, bottom: 10.0),
+              child: Text(linhas_de_tedencia,
                   style: TextStyle(color: Colors.black)),
+            ),
+            Image.asset(
+              'lib/assets/introducao_dois.png',
+              scale: 1.7,
             ),
             Padding(
                 padding: EdgeInsets.only(bottom: 20.0),

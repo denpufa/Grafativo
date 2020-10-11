@@ -1,8 +1,8 @@
 import 'package:admob_flutter/admob_flutter.dart';
-import 'package:estudo/textos.dart';
+import 'package:estudo/utils/textos.dart';
 import 'package:flutter/material.dart';
 
-import 'ad_guia.dart';
+import '../admob/ad_guia.dart';
 
 class Ajuda extends StatefulWidget {
   @override
@@ -29,7 +29,7 @@ class _AjudaState extends State<Ajuda> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Padding(
-                padding: EdgeInsets.only(bottom: 20.0),
+                padding: EdgeInsets.only(bottom: 10.0),
                 child: AdmobBanner(
                   adUnitId: AdGuia.bannerId,
                   adSize: AdmobBannerSize.BANNER,
