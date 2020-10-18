@@ -1,5 +1,5 @@
 # Grafativo
 
 Guia de uso 
-- Clicar no arquivo realese apk fazer o dowload
+-fazer o dowload do apk
 - Autorizar a instalação de aplicativos desconhecidos
